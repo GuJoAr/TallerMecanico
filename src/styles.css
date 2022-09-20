@@ -1,0 +1,14 @@
+
+body {
+    text-align: center;
+    margin-top: 5%;
+    background-image:url('/assets/taller 01.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: 'Karla', sans-serif;
+}
+
+

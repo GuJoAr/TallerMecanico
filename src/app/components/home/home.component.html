@@ -1,0 +1,104 @@
+
+<div>
+    <ul class="nav nav-pills justify-content-center" style="margin-bottom: 2%;">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#Servicios">Servicios</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#eLTaller">Taller</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#Ubicacion">Ubicacion</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#Contacto">Contacto</a>
+        </li>
+    </ul>
+        <a class="UserAvatarAndUserName" href="#" style="color: red;" *ngIf="userLogged|async as user">
+        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" 
+         width="30" style="margin-left:10px;" height="30" class="d-inline-block align-top" alt="">
+         {{user.email}} 
+        </a>
+</div>
+<div>
+    <li class="nav-link active">
+        <a class="nav-link" href="/register"><button>Register</button></a>
+    </li>
+    <li class="nav-link active">
+        <a class="nav-link" href="/login"><button>LogIn</button> </a>
+    </li>
+    <li class="nav-link active">
+        <a style="cursor:pointer;" (click)="logout()" class="nav-link"><button>LogOut</button></a>
+    </li>
+</div>
+
+<h1>Taller Mecanico</h1>
+
+<div>
+    <p>Somos un taller con xx años de trayectoria brindado servicios de primera calidad para tu auto.</p>
+    <p>Podes pedir agendar nuestro numero para pedir un turno cuando quieras.</p>
+</div>
+<div>
+    <a class="elementor-button-link elementor-button elementor-size-sm" href="https://api.whatsapp.com/send/?phone=5492214988409" role="button">
+        <span class="elementor-button-content-wrapper">
+            <span class="elementor-button-icon elementor-align-icon-left">
+                <i class="fab fa-whatsapp" aria-hidden="true">
+                    <img src="/assets/logo wsp 07.png">
+                </i>
+            </span>
+            <span id="Contacto" class="elementor-button-text">Contactanos</span>
+        </span>
+    </a>
+</div>
+<div>
+    <h2 id="Servicios">Servicio en el taller</h2>
+</div>
+
+<div class="container">
+    <div class="row">        
+      <div class="col-3">
+        <img class="servicios" src="/assets/electronica.png" alt="Bateria">
+        <h3>Electronica</h3>
+        <li>Diagnóstico de sistemas electrónicos</li>
+        <li>Electricidad</li>
+        <li>Baterías</li>
+      </div>
+      <div class="col-3">
+        <img class="servicios" src="/assets/mecanica.png" alt="Mecanica">
+        <h3>Mecanica</h3>
+        <li>Mecánica Ligera y de motor</li>
+        <li>Filtros y Correas</li>
+        <li>Cambio de aceite</li>
+        <li>Embrague/ Caja de cambios</li>
+      </div>
+      <div class="col-3">
+        <img class="servicios" src="/assets/suspension.png" alt="Suspension">
+        <h3>Suspensión</h3>
+        <li>Cambio de amortiguadores</li>
+        <li>Cambio de bujes</li>
+        <li>Parrilla de suspensión</li>
+      </div>
+    </div>
+</div>
+
+<div>
+    <h2 id="eLTaller">El Taller</h2>
+    <app-carousel-slider></app-carousel-slider>
+</div>
+
+<div>
+    <h2 id="Ubicacion">Ubicación</h2>
+</div>
+
+<div>
+    <span style="display: block; font-size: 30px;">calle: 35 n 1563 e/ 26 y 27</span>
+    <span style="display: block; font-size: 30px;">Lunes a Viernes 8:30hs a 13hs - 14hs a 19hs</span>
+</div>
+
+<div>
+    <a href="https://api.whatsapp.com/send/?phone=5492214988409" class="bi bi-whatsapp" target="_blank">
+        <i class="bi bi-whatsapp">
+            <img src="/assets/logo wsp 07.png">
+        </i>
+    </a>
+</div>

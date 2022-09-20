@@ -1,0 +1,11 @@
+.slid {
+    padding: 20px 28%;
+
+}
+
+@media screen and (max-width:912px){
+    .slid {
+        padding: 20px 12%;
+        
+    }
+}
