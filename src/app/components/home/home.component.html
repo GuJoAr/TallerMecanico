@@ -1,11 +1,23 @@
 
+<div class="nav nav-pills justify-content-end" style="margin-bottom: 2%;">
+    <li class="nav-item">
+        <a class="nav-link" href="/register"><button class="btn btn-primary btn-sm">Register</button></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="/login"><button class="btn btn-primary btn-sm">LogIn</button> </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" style="cursor:pointer;" (click)="logout()" class="nav-link"><button class="btn btn-primary btn-sm">LogOut</button></a>
+    </li>
+</div>
+
 <div>
     <ul class="nav nav-pills justify-content-center" style="margin-bottom: 2%;">
         <li class="nav-item">
         <a class="nav-link active" aria-current="page" href="#Servicios">Servicios</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#eLTaller">Taller</a>
+        <a class="nav-link" href="#ElTaller">Taller</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="#Ubicacion">Ubicacion</a>
@@ -19,17 +31,6 @@
          width="30" style="margin-left:10px;" height="30" class="d-inline-block align-top" alt="">
          {{user.email}} 
         </a>
-</div>
-<div>
-    <li class="nav-link active">
-        <a class="nav-link" href="/register"><button>Register</button></a>
-    </li>
-    <li class="nav-link active">
-        <a class="nav-link" href="/login"><button>LogIn</button> </a>
-    </li>
-    <li class="nav-link active">
-        <a style="cursor:pointer;" (click)="logout()" class="nav-link"><button>LogOut</button></a>
-    </li>
 </div>
 
 <h1>Taller Mecanico</h1>
@@ -82,7 +83,7 @@
 </div>
 
 <div>
-    <h2 id="eLTaller">El Taller</h2>
+    <h2 id="ElTaller">El Taller</h2>
     <app-carousel-slider></app-carousel-slider>
 </div>
 
