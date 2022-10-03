@@ -100,6 +100,26 @@ img.servicios {
 span {
     color: rgba(22, 29, 20, 0.959);
     font-family: 'Karla', sans-serif;    
-    text-shadow: 1px 1px 1px red;    
+    text-shadow: 1px 1px 1px red;
+    
+    
 }
 
+
+.mapa {
+    display: inline-block;
+    margin: 20px auto;
+    font-family: 'Karla', sans-serif;
+    font-size: 35px;
+}
+
+.direccion {
+    float: left;
+    text-align: left;
+    padding-top: 14%;
+}
+
+.google {
+    float: right;
+    margin-left: 10px;
+}
